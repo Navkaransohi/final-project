@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <title>chirp</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <div class="logo"><i>Chirp.</i></div>
+      <div class="menu">
+        <ul class="menu-item">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+      </ul>
+      <button class="header-button"><img src="Assets/Twitter.svg" width="18px" height="18px"> Sign in with Twitter</button>
+      </div>
+      <div class="hamburger">
+        <img src="Assets/Hamburger Menu.svg">
+      </div> 
+    </nav> 
+  </header>
+
+  <!-- main -->
+  <main>
+
+    <!-- FAQ-Section -->
+
+    <section class="faq-section">
+      <h1>Chirp FAQ</h1>
+      <div>
+        <h2 class="question">How can I create an account to use Chirp?</h2>
+        <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquam, felis ut finibus suscipit,
+            nibh metus hendrerit urna, quis blandit nisi odio in felis. Integer vestibulum interdum convallis. Ut eleifend
+            lorem quis purus feugiat auctor.</p>
+      </div>
+
+      <div>
+        <h2 class="question">What makes the most sense for users in Chirp?</h2>
+        <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet convallis tortor. Donec eget
+            dui quis justo pellentesque luctus. Integer volutpat euismod ligula at eleifend.</p>
+      </div>
+
+      <div>
+        <h2 class="question">How do I reset my password?</h2>
+        <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce a elit eu lectus fringilla eleifend at eu
+            dolor. Integer ullamcorper quam ac ipsum posuere, in euismod arcu eleifend.</p>
+      </div>
+
+      <div>
+        <h2 class="question">Can I change my username?</h2>
+        <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus vel risus quis nulla venenatis
+            vulputate. Nulla facilisi. Mauris varius ligula vel ultricies venenatis.</p>
+      </div>
+
+      <div>
+        <h2 class="question">What features are available in Chirp?</h2>
+        <p class="answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vel nunc ac nulla iaculis aliquet. Sed
+            vitae facilisis lectus.</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer">
+      <div class="footer-logo"><i>Chirp.</i></div>
+      <div class="footer-menu">
+        <ul>
+          <li><img src="Assets/Twitter (Black).svg" width="20px" height="20px"></li>
+          <li>Privacy Policy</li>
+          <li>Terms of Use</li>
+        </ul>
+      </div> 
+    </div>      
+</footer>
+
+<!-- Javascript add and remove for Navbar Menu on mobile -->
+<script>
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".menu");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  })
+
+  document.querySelector(".navMenu").forEach(n => n. addEventListener("click", () =>{
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+  }))
+</script>
+</body>
+</html>
